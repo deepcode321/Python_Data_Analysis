@@ -1,30 +1,3 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[6]:
-
-
-import pandas as pd
-
-html_content = """
-<html>
-<body>
-<p>This HTML content doesn't contain any tables.</p>
-</body>
-</html>
-"""
-
-tables = pd.read_html(html_content)
-
-if len(tables) == 0:
-    print("No tables were found.")
-else:
-    print("Tables were found.")
-
-
-# In[97]:
-
-
 import requests
 
 #download the HTML document
@@ -67,27 +40,4 @@ for row in rows:
     school_list.clear()
     print(show_list)
     
-    
-    
-    
-    
  
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
-
-# In[ ]:
-
-
-
-
